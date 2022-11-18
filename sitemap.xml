@@ -1,0 +1,117 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<urlset
+      xmlns = "http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation = "http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+  <url>
+    <loc>https://cronicle.space/</loc>
+    <lastmod>2022-07-05T11:06:43+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/features/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/careers/</loc>
+    <lastmod>2022-07-04T14:07:01+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/contact-sales/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/about/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/help-center/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/signup/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/login/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/all-about-biometrics/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/color-coded-notes/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/cryptocurrencies-losing-value/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/pomodoro-technique/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/quantum-computing-principles/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/study-for-hours/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/the-metaverse/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/what-is-seo/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <url>
+    <loc>https://cronicle.space/learning/why-learn-coding/</loc>
+    <lastmod>2022-07-06T05:37:10+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+</urlset>

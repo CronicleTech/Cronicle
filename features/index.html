@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+	<!-- Webpage Title -->
+	<title>Features | Cronicle</title>
+
+	<!-- Website Icon -->
+	<link rel = "shortcut icon" type = "image" href = "../main/image/logo.webp">
+
+	<!-- Meta Tags -->
+	<meta charset = "UTF-8"> <!-- Language -->
+	<meta http-equiv='content-language' content='en-us'> <!-- Language -->
+
+	<meta name = "description" content = "Discover the journey of Cronicle Technologies and the brains behind it. Founded in 2020, Cronicle is a task management tool aiming to improve efficiency at work and study."> <!-- Description -->
+
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1"> <!-- Mobile Responsiveness -->
+
+	<!-- Bootstrap 4.1 CSS Library -->
+	<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W1M8PDX1X"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-7W1M8PDX1X');
+	</script>
+
+	<!-- Main CSS -->
+	<link rel = "stylesheet" href = "../main/css/style.css">
+
+	<style>
+		/** Header Content */
+		header img.background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+
+			width: 100%;
+		}
+
+		header img {
+			user-drag: none;  /** Disable User Select */
+		   	user-select: none;
+		   	-moz-user-select: none;
+		   	-webkit-user-drag: none;
+		   	-webkit-user-select: none;
+		   	-ms-user-select: none;
+		}
+
+		header img.header {
+			border-radius: 5px;
+			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .15);
+			margin-top: -25px;
+		}
+
+		header p {
+			margin-bottom: 50px;
+		}
+
+
+
+
+		/** Features Content */
+		video {
+			border-radius: 5px;
+			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .15);
+			width: 100%;
+		}
+
+		img.access {
+			width: 85%;
+		}
+
+
+
+
+		/** Sign Up Footer */
+		div.sign-up div.container {
+			margin-top: 175px;
+		}
+
+
+
+
+		/** Responsive CSS */
+		@media (max-width: 1250px) {
+
+			header img.header {
+				margin-top: 0;
+			}
+
+		}
+
+		@media (max-width: 1000px) {
+
+			header img.background {
+				display: none;
+			}
+
+			video, img.access {
+				margin: 50px 0;
+			}
+
+		}
+
+		@media (max-width: 785px) {
+
+			div.semi-full {
+				margin-top: 75px;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<nav></nav>
+
+	<!-- Header Content -->
+	<header>
+
+		<!-- Background Image -->
+		<img src = "image/background.svg" alt = "Gradient Image" class = "background">
+
+		<div class = "container top full">
+
+			<div class = "row">
+
+				<div class = "col-lg-5 text">
+
+					<h1>A task manager for you and your work</h1>
+
+					<p>Create and manage your personalized to-do list to view your tasks, anytime and anywhere.</p>
+
+					<a href = "https://cronicle.space/signup">
+						<button class = "primary">Get Started</button>
+					</a>
+
+				</div>
+
+				<div class = "col-lg-1"></div>
+
+				<div class = "col-lg-6 image">
+
+					<img src = "image/header software.webp" alt = "Cronicle Software" class = "header full">
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<!-- Quick Add Content -->
+	<div class = "container semi-full">
+
+		<div class = "row">
+
+			<div class = "col-md-6">
+
+				<video autoplay loop muted>
+
+				  	<source src="video/add.mp4" type="video/mp4">
+
+				</video>
+
+			</div>
+
+			<div class = "col-md-1"></div>
+
+			<div class = "col-md-5">
+
+				<p class = "highlight">QUICK ADD</p>
+
+				<h2>Insert your assignments easily</h2>
+
+				<p>
+
+					You are in full control of your to-do list. Add assignments, tasks, or reminders to your dashboard with ease. You can choose what you want to show and what you want to hide.
+
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Completion Check Content -->
+	<div class = "container semi-full">
+
+		<div class = "row">
+
+			<div class = "col-md-5">
+
+				<p class = "highlight">COMPLETION CHECK</p>
+
+				<h2>Remove finished tasks from view</h2>
+
+				<p>
+
+					Clear completed tasks from your to-do list and focus on unfinished assignments. With a single click on the right corner of each activity, finished tasks can be removed from view.
+
+				</p>
+
+			</div>
+
+			<div class = "col-md-1"></div>
+
+			<div class = "col-md-6">
+
+				<video autoplay loop muted>
+
+				  	<source src="video/completion.mp4" type="video/mp4">
+
+				</video>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Universal Access Content -->
+	<div class = "container">
+
+		<div class = "row">
+
+			<div class = "col-md-6" style = "text-align: center;">
+
+				<img src = "image/access.webp" alt = "Universal Access" class = "access">
+
+			</div>
+
+			<div class = "col-md-1"></div>
+
+			<div class = "col-md-5">
+
+				<p class = "highlight">UNIVERSAL ACCESS</p>
+
+				<h2>Open your dashboard from anywhere</h2>
+
+				<p class = "description">
+				
+					Access your dashboard from anywhere. Whether you are using your smartphone, tablet, or computer, you can open and utilize your Cronicle account.
+
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Sign Up Content -->
+	<div class = "sign-up"></div>
+
+	<!-- Footer -->
+	<footer></footer>
+
+	<!-- Bootstrap 4.1 JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!-- NavBar and Footer Script -->
+	<script src = "../main/js/navbar.js"></script>
+
+	<script src = "../main/js/signup.js"></script>
+
+	<script src = "../main/js/footer.js"></script>
+
+
+</body>
+</html>
