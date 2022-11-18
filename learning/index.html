@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+	<!-- Webpage Title -->
+	<title>Cronicle Learning | Sharing Productivity Tips and Updates</title>
+
+	<!-- Website Icon -->
+	<link rel = "shortcut icon" type = "image" href = "../main/image/logo.webp">
+
+	<!-- Meta Tags -->
+	<meta charset = "UTF-8"> <!-- Language -->
+	<meta http-equiv='content-language' content='en-us'> <!-- Language -->
+
+	<meta name = "description" content = "Productivity tips, technological advancements updates, and more. Cronicle Learning aims to provide free education about the professional world for all."> <!-- Description -->
+
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1"> <!-- Mobile Responsiveness -->
+
+	<!-- Bootstrap 4.1 CSS Library -->
+	<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7W1M8PDX1X"></script>
+	
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-7W1M8PDX1X');
+	</script>
+
+	<!-- Main CSS -->
+	<link rel = "stylesheet" href = "../main/css/style.css">
+
+	<link rel = "stylesheet" href = "../main/css/blog.css">
+
+	<style>
+
+		/** Header */
+		header h1 {
+			font-size: 2.85em;
+			line-height: 1.25em;
+		}
+
+		header img {
+			user-drag: none;  /** Disable User Select */
+		   	user-select: none;
+		   	-moz-user-select: none;
+		   	-webkit-user-drag: none;
+		   	-webkit-user-select: none;
+		   	-ms-user-select: none;
+		}
+
+		header img.background {
+			width: 50vw;
+			height: 135vh;
+
+			position: absolute;
+			top: -8.5%;
+			right: 0;
+			z-index: -1;
+		}
+
+		header img.full {
+			box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .15);
+		}
+
+
+
+
+		/** Blog Content */
+		div.blog img[src *= "icon"] {
+			background-color: var(--cpurple);
+		    border-radius: 5px;
+		    box-shadow: 0 10px 20px 0 rgb(140 82 255 / 45%);
+		    margin-right: 25px;
+		}
+
+		div.blog h2 {
+			font-size: 1.5em;
+			margin-top: 15px;
+			margin-bottom: 75px;
+		}
+
+		div.panel {
+			border-radius: 5px;
+			box-shadow: 0 5px 20px #00000014;
+			padding: 0;
+			margin-bottom: 50px;
+		}
+
+		div.panel img {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			box-shadow: none;
+		}
+
+		div.panel a h2 {
+			color: black;
+			font-size: 1.3em;
+			line-height: 1.5em;
+			margin: 15px 35px 0 35px;
+			min-height: 125px;
+		}
+
+		div.panel a h2:hover, a h2:focus, a h2:active {
+			color: var(--cpurple);
+		}
+
+		div.panel p.highlight {
+			font-size: .85em;
+			margin: 35px 35px 0 35px;
+		}
+
+		div.panel div.row {
+			margin: 0 35px;
+		}
+
+		div.panel div.row img[src *= "author"] {
+			border-radius: 50%;
+			margin-right: 15px;
+		}
+
+		div.panel div.row p {
+			margin-top: 7.5px;
+			margin-bottom: 35px;
+		}
+
+		div.panel div.row p.break {
+			margin: 7.5px 12.5px 0 12.5px;
+		}
+
+
+
+
+		/** Series Content */
+		div.series {
+			margin-top: 100px;
+		}
+
+		div.series img[src *= "icon"] {
+			background-color: var(--cpurple);
+		    border-radius: 5px;
+		    box-shadow: 0 10px 20px 0 rgb(140 82 255 / 45%);
+		    margin-right: 25px;
+		}
+
+		div.series h2 {
+			font-size: 1.5em;
+			margin-top: 15px;
+			margin-bottom: 75px;
+		}
+
+
+
+
+		/** Writers Content */
+		div.writers {
+			margin-top: 100px;
+		}
+
+		div.writers img[src *= "icon"] {
+			background-color: var(--cpurple);
+		    border-radius: 5px;
+		    box-shadow: 0 10px 20px 0 rgb(140 82 255 / 45%);
+		    margin-right: 25px;
+		}
+
+		div.writers h2 {
+			font-size: 1.5em;
+			margin-top: 15px;
+			margin-bottom: 75px;
+		}
+
+		div.writers div.col-2 button {
+			background-color: transparent;
+			color: var(--cpurple);
+			font-weight: bold;
+			font-size: 1.75em;
+			border: none;
+			border-radius: 50%;
+			box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .15);
+			margin-top: 10px;
+			width: 45px;
+			height: 45px;
+			transition: .5s background-color;
+		}
+
+		div.writers div.col-2 button:hover, div.col-2 button:focus, div.col-2 button:active {
+			background-color: var(--cpurple);
+			color: white;
+		}
+
+		div.writers div.panel {
+			border-radius: 5px;
+			box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .15);
+			padding: 35px 0 35px 20px;
+		}
+
+		div.writers div.panel h3 {
+			font-weight: normal;
+			font-size: 1.05em;
+			margin-top: 22.5px;
+			margin-bottom: 0;
+		}
+
+
+
+
+		/** Responsive CSS */
+		@media (max-width: 1215px) {
+
+			div.writers div.panel h3 {
+				max-width: 50%;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			}
+
+		}
+
+		@media (max-width: 1110px) {
+
+			header img.background {
+				display: none;
+			}
+
+			div.panel a h2 {
+				min-height: 165px;
+			}
+
+			div.panel p.break, div.panel p.date {
+				display: none;
+			}
+
+		}
+
+		@media (max-width: 1005px) {
+
+			div.writers div.col-2 button {
+				display: none;
+			}
+
+		}
+
+		@media (max-width: 992px) {
+
+			div.panel {
+				max-width: 85%;
+				margin-left: 7.5%;
+			}
+
+			div.panel img.full {
+				margin: 0;
+			}
+
+			div.panel a h2 {
+				min-height: 85px;
+			}
+
+			div.panel p.break, div.panel p.date {
+				display: initial;
+			}
+
+		}
+
+		@media (max-width: 780px) {
+
+			div.panel {
+				max-width: 100%;
+				margin-left: 0;
+			}
+
+			div.panel a h2 {
+				min-height: 100px;
+			}
+
+			div.panel p.break, div.panel p.date {
+				display: none;
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<nav></nav>
+
+	<!-- Header Content -->
+	<header>
+
+		<!-- Background Image -->
+		<img src = "image (index)/header background.svg" alt = "Gradient Image" class = "background">
+
+		<div class = "container semi-full top">
+
+			<div class = "row">
+
+				<div class = "col-lg-5 text">
+
+					<h1>Sharing productivity tips, technology updates, and more.</h1>
+
+				</div>
+
+				<div class = "col-lg-1"></div>
+
+				<div class = "col-lg-6">
+
+					<img src = "image (index)/header index.webp" alt = "Thinking Brain" class = "full">
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<!-- Blog Content -->
+	<div class = "container blog" id = "articles">
+
+		<div class = "col-sm-12">
+
+			<div class = "row">
+
+				<img src = "image (index)/icon articles.svg" alt = "Articles Icon" width = "55" height = "55">
+
+				<h2>Articles</h2>
+
+			</div>
+
+		</div>
+
+		<div class = "row">
+
+			<!-- Color Coded Notes -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/articles/color-coded-notes/">
+						<img src = "articles/color-coded-notes/image.webp" alt = "Color Coding Image" class = "full">
+					</a>
+
+					<p class = "highlight">PRODUCTIVITY</p>
+
+					<a href = "https://cronicle.space/learning/articles/color-coded-notes/">
+						<h2>Color Coded Notes - A Productive Way to Study</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author elif.webp" alt = "Elif Oktay" class = "author" width = "35" height = "35">
+
+						<p>Elif Oktay</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">15 June 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Pomodoro Technique -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/articles/pomodoro-technique/">
+						<img src = "articles/pomodoro-technique/image.webp" alt = "Studying With Pomodoro" class = "full">
+					</a>
+
+					<p class = "highlight">PRODUCTIVITY</p>
+
+					<a href = "https://cronicle.space/learning/articles/pomodoro-technique/">
+						<h2>Pomodoro Study Technique - What Is It and Does It Work?</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author khyatee.webp" alt = "Khyatee Atolia" class = "author" width = "35" height = "35">
+
+						<p>Khyatee A</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">27 June 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Why Coding -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/articles/why-learn-coding/">
+						<img src = "articles/why-learn-coding/image.webp" alt = "Studying With Pomodoro" class = "full">
+					</a>
+
+					<p class = "highlight">TECHNOLOGY</p>
+
+					<a href = "https://cronicle.space/learning/articles/why-learn-coding/">
+						<h2>Why Every Child Should Learn Coding</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author kevin.webp" alt = "Khyatee Atolia" class = "author" width = "35" height = "35">
+
+						<p>Kevin W</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">7 June 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Study For Hours -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/articles/study-for-hours/">
+						<img src = "articles/study-for-hours/image.webp" alt = "Studying For Hours" class = "full">
+					</a>
+
+					<p class = "highlight">PRODUCTIVITY</p>
+
+					<a href = "https://cronicle.space/learning/articles/study-for-hours/">
+						<h2>Ways to Study For Long Hours Without Getting Bored</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author melissa.webp" alt = "Melissa Huang" class = "author" width = "35" height = "35">
+
+						<p>Melissa H</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">28 June 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Presentation Tips -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/articles/excellent-presentation-tips/">
+						<img src = "articles/excellent-presentation-tips/image.webp" alt = "Presentation" class = "full">
+					</a>
+
+					<p class = "highlight">PRESENTATION</p>
+
+					<a href = "https://cronicle.space/learning/articles/excellent-presentation-tips/">
+						<h2>5 Tips: How To Create an Excellent Presentation</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author oliver.webp" alt = "Oliver Kevin" class = "author" width = "35" height = "35">
+
+						<p>Oliver K</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">14 July 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Volunteering -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/articles/why-teens-volunteer/">
+						<img src = "articles/why-teens-volunteer/image.webp" alt = "Volunteering" class = "full">
+					</a>
+
+					<p class = "highlight">COMMUNITY</p>
+
+					<a href = "https://cronicle.space/learning/articles/why-teens-volunteer/">
+						<h2>3 Reasons Why Teens Should Volunteer</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author hari.webp" alt = "Hari Loukyaa" class = "author" width = "35" height = "35">
+
+						<p>Hari L</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">1 August 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "row">
+
+			<div class = "col-sm-12" style = "text-align: center;">
+
+				<button class = "primary" style = "margin: 50px 0; padding: 10px 25px;">Read More</button>
+		
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Series Content -->
+	<div class = "container series" id = "series">
+
+		<div class = "col-sm-12">
+
+			<div class = "row">
+
+				<img src = "image (index)/icon series.svg" alt = "Series Icon" width = "55" height = "55">
+
+				<h2>Series</h2>
+
+			</div>
+
+		</div>
+
+		<div class = "row">
+
+			<!-- Quantum Computing -->
+			<div class = "col-lg-4">
+
+				<div class = "panel">
+
+					<a href = "https://cronicle.space/learning/series/quantum-computing/">
+						<img src = "articles/quantum-computing-principles/image.webp" alt = "Computer" class = "full">
+					</a>
+
+					<p class = "highlight">TECHNOLOGY</p>
+
+					<a href = "https://cronicle.space/learning/series/quantum-computing/">
+						<h2>All About Quantum Computing</h2>
+					</a>
+
+					<div class = "row">
+
+						<img src = "image/author khyatee.webp" alt = "Khyatee Atolia" class = "author" width = "35" height = "35">
+
+						<p>Khyatee A</p>
+
+						<p class = "break">|</p>
+
+						<p class = "date">30 June 2022</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Writer Content -->
+	<div class = "container writers" id = "writers">
+
+		<div class = "col-sm-12">
+
+			<div class = "row">
+
+				<div class = "col-10">
+
+					<div class = "row">
+
+						<img src = "image (index)/icon writers.svg" alt = "Writers Icon" width = "55" height = "55">
+
+						<h2>Featured Writers</h2>
+
+					</div>
+
+				</div>
+
+				<div class = "col-2">
+
+					<button style = "margin-right: 15px;" onclick = "$('.carousel').carousel('prev');"> < </button>
+
+					<button onclick = "$('.carousel').carousel('next')"> > </button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+
+		  	<div class="carousel-inner">
+
+			    <div class="carousel-item active">
+
+			      	<div class = "row" style = "padding: 35px;">
+
+						<!-- Elif -->
+						<div class = "col-lg-4">
+
+							<div class = "panel">
+
+								<div class = "row">
+
+									<img src = "image/author elif.webp" alt = "Elif Oktay" width = "65" height = "65">
+
+									<h3>Elif Oktay</h3>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- Khyatee -->
+						<div class = "col-lg-4">
+
+							<div class = "panel">
+
+								<div class = "row">
+
+									<img src = "image/author khyatee.webp" alt = "Khyatee Atolia" width = "65" height = "65">
+
+									<h3>Khyatee Atolia</h3>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- Oliver -->
+						<div class = "col-lg-4">
+
+							<div class = "panel">
+
+								<div class = "row">
+
+									<img src = "image/author oliver.webp" alt = "Oliver Kevin" width = "65" height = "65">
+
+									<h3>Oliver Kevin</h3>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+			    </div>
+
+			    <div class="carousel-item">
+			      	
+			      	<div class = "row" style = "padding: 35px;">
+
+			      		<!-- Nicholas -->
+						<div class = "col-lg-4">
+
+							<div class = "panel">
+
+								<div class = "row">
+
+									<img src = "image/author nicholas.webp" alt = "Nicholas Nathan" width = "65" height = "65">
+
+									<h3>Nicholas Nathan</h3>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- Kevin -->
+						<div class = "col-lg-4">
+
+							<div class = "panel">
+
+								<div class = "row">
+
+									<img src = "image/author kevin.webp" alt = "Kevin Wijaya" width = "65" height = "65">
+
+									<h3>Kevin Wijaya</h3>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- Melissa -->
+						<div class = "col-lg-4">
+
+							<div class = "panel">
+
+								<div class = "row">
+
+									<img src = "image/author melissa.webp" alt = "Melissa Huang" width = "65" height = "65">
+
+									<h3>Melissa Huang</h3>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+			    </div>
+
+		  	</div>
+
+		</div>
+
+	</div>
+
+	<!-- Sign Up Content -->
+	<div class = "sign-up"></div>
+
+	<!-- Footer -->
+	<footer></footer>
+
+	<!-- Bootstrap 4.1 JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!-- NavBar and Footer Script -->
+	<script src = "../main/js/navbar learning.js"></script>
+
+	<script src = "../main/js/signup.js"></script>
+
+	<script src = "../main/js/footer.js"></script>
+
+</body>
+</html>
